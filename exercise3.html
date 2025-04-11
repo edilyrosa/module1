@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="./exercise3.css">
+     <title>Class 3 y 4</title>
+    <style>
+      header * {
+        display: inline;
+        margin-left: 20px;
+        }
+        #container  {
+        width: 100%;
+        text-align: center;
+        }
+        #container :nth-child(1) {
+            width: 90%;
+        }
+        #container :nth-child(2) {
+            width: 80%;
+        }
+        #container :nth-child(3) {
+            width: 70%;
+        }
+        #container :nth-child(4) {
+            width: 60%;
+        }
+        #container :nth-child(5) {
+            width: 50%;
+        }
+
+        #container :nth-child(odd) {
+            background-color: hotpink;
+        }
+        #container :nth-child(even) {
+            background-color: cyan;
+        }
+
+        #container :nth-child(odd):hover{
+            background-color: cyan;
+        }
+        #container :nth-child(even):hover{
+            background-color: hotpink;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+    </style>
+      
+</head>
+<body>
+    <header>
+        <img src="./ingnio.jpg" alt="the img icon" width="80px" height="80px">
+        <h1>Class 3 y 4</h1>
+        <nav>
+            <ul>
+                <li> <a href="#ancors"> Ancors Vs. Links </a></li>
+                <li> <a href="#attribute" > HTML Attributes </a></li>
+                <li> <a href="#style"> Style CSS </a></li>
+                <li> <a href="#box-model"> Box Model </a></li>
+                <li> <a href="#display"> Display CSS Property </a> </li>
+                <li> <a href="https://portfolio-course-js-front.vercel.app/"> portfolio </a> </li>
+                <li> <a target="_blank" href="https://google.com"> 🔎 </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<!--!! CLASS 3 -->
+        <section id="ancors" style="background-color:rgb(255, 255, 255); font-size:30px;">
+            <h2> Ancors Vs. Links</h2>  
+            <p>
+                <b>&lt;a&gt;</b>
+                Propósito: Se utiliza para crear hipervínculos que permiten a los usuarios navegar a otra página web, ya sea interna o externa. Estos enlaces son interactivos y se pueden hacer clic para acceder al contenido enlazado.
+                <br>
+                Uso: Se utiliza para enlaces que los usuarios pueden seguir directamente desde la página web, como enlaces a sitios externos, correos electrónicos, números de teléfono, etc.
+                <br>
+                Se puede colocar en cualquier parte del &lt;body&gt; y es visible para los usuarios. Son enlaces interactivos y pueden ser clicados.
+
+                <br>
+                Ejemplo: 
+                <code>
+                    <br> 
+                    &lt;a href="tel:+1234567890">, 
+                    <br> 
+                    &lt;a href="sms:+1234567890">
+                    <br>
+                    &lt;a  href="#display"> Display CSS Property >
+                    <br>
+                    &lt;a  href="https://portfolio-course-js-front.vercel.app/"> portfolio >
+                    <br>
+                    &lt;a target="_blank" href="https://google.com"> 🔎>      💪🏽HAGAMOZLO⚒️
+                    <br>
+                    ...
+                </code> 
+            </p>
+            
+            <br>
+            <p>
+                <b>&lt;link&gt;</b>
+                Propósito: Se utiliza principalmente para establecer relaciones entre el documento actual y un recurso externo, como hojas de estilo (CSS), iconos de favicon, o metadatos. No es interactiva para los usuarios.
+                <br>
+                Uso: Se utiliza para enlaces que no son interactivos, como la conexión a una hoja de estilo CSS o el favicon de un sitio web.            
+                <br>
+                Ejemplo:   
+                <code>
+                    <br>
+                    &lt;link rel="icon" type="image/x-icon" href="...">,  
+                    <br>
+                    &lt;link rel="stylesheet" href="./exercise3.css"> 💪🏽HAGAMOZLO⚒️
+                </code> 
+            </p>
+            
+            <br>
+            <p>Ambos ocupan el Atributo <mark><code>href="" y rel=""</code></mark>, pero &lt;a&gt; tiene target y &lt;link&gt; tiene type. 
+                    <br>
+                    El atributo target, controla cómo se abre el enlace. “_self” para la misma pestaña o “_blank” para una nueva pestaña.
+                    <br>
+                    El atributo rel= en &lt;link&gt; es Imprescindible, y espera alguno de los siguientes valores: “stylesheet || icon || preload || alternate || canonical || prev || next” 
+            </p>
+        </section>
+
+      
+        <section id="attribute" style="background-color:rgb(239, 235, 230); font-size: 30px;">
+                <h2 title="this is a h2 tag about HTML Attb">HTML Attributes</h2>
+                <p>
+                    Los atributos son propiedades que se agregan a las etiquetas HTML para modificar o personalizar su comportamiento. Se escriben dentro de la etiqueta de apertura y consisten en un nombre = “valor” entre comillas.
+                </p>
+                <p style="text-align: center;">
+                    <code>&lt;tag AttributeName='value'&gt; CONTENT &lt;/tag&gt;</code>
+                </p>
+    
+                <h3>Los Atributos Booleanos </h3>
+                <p> 
+                    No requieren un valor explícito. La mera presencia del atributo significa true, lo que es igual a ACTIVADO y  su ausencia significa false, lo que es igual a DESACTIVADO. No le asignes ningún valor. Estos atributos controlan comportamientos o estados específicos en elementos HTML.
+                    <code>&lt;input type='text' <mark>required</mark> tag&gt;</code>
+                </p>
+                <h3>Commun Attributes</h3>
+                <p> id=“” <br> class=“” <br> style=“” 
+                    <br>src=“”:(Source) define la fuente de un recurso que se esta renderizando o reproduciendo como una imagen, un video, un archivo de audio o un script.
+                    <br>href=“”:(Hypertext Reference) define la URL o la ubicación de un recurso al que se desea vincular, como un enlace o una hoja de estilo externa. Lo ocupan <mark>&lt;a&gt; y &lt;link&gt;</mark>
+    
+                    <br> title=“”: Proporciona información adicional al pasar el cursor sobre el<br>
+                    <br>hidden Oculta un elemento, Booleano.<br>
+                      src=“https//” 
+                      <br> width=“100px” <br> height=“40px”: Los atributos height y width controlar el tamaño de imágenes, videos y otros elementos multimedia y visuales. Esperando por defecto valores numéricos (en píxeles) y porcentajes explícitamente, ejemplo: width=“300”. Las etiquetas como table>, td>, img> y iframe> dependiendo del navegador, pueden recibir valores en porcentaje, width=“50%”  en relación a su contenedor padre.
+    
+                </p>
+                <p><b>Atributos comunes multimedia o visuales: </b>disabled, readonly, required, checked, loop,   </p>
+                
+                <h2>Propiedades CSS comunes:</h2>
+                <p> 
+                    color, background-color, font-size, font-family, text-align, margin, padding, border, width, height, display, position, float, clear, opacity, text-decoration, text-transform, line-height, letter-spacing, word-spacing, text-shadow, box-shadow, border-radius, overflow, cursor, transition, transform, animation, flex, grid, media queries, responsive design, etc.</p>
+                </p>
+           
+        </section>
+
+
+        <section id="style" style="background-color:rgb(255, 255, 255); font-size: 30px;" >
+            <h2> Formas de aplicar estilos a los elementos HTML</h2>
+            <h3>Regla CSS</h3>
+
+            <p style="margin-left:50px ;">
+                <code>
+                    selector{
+                        <br>
+                        &emsp; propiedad <mark> : </mark> "valor" <mark> ; </mark>
+                        <br>
+                        &emsp; propiedad : "valor" ;
+                        <br>
+                    }
+                </code>
+            </p>
+
+            <h3>Formas de aplicar Estilos</h3>
+            <h4>Estilo en línea o inline</h4>
+            <p>Para aplicar el estilo en línea usamos el atributo "style" del elemento HTML. 
+                <code>
+                    &lt;tag style= <mark>“ </mark> key:value;… <mark>” </mark> &gt; CONTENT &lt;/tag&gt;
+                </code>
+            </p>
+            
+            <h4>Estilo Interno</h4>
+            <p>Dentro de la etiqueta &lt;head&gt; usamos la etiqueta &lt;style&gt; que será contenedora de las reglas CSS a aplicar. 
+ 
+                <code>
+                    selector {key:value;…}
+                </code>
+            </p>
+            
+            <h4>Estilo Externo</h4>
+            <p> Creando un archivo .css establece las reglas CSS a aplicar en el documento .html Los archivos deben estar enlazados. 
+ 
+                <code>
+                    selector {key:value;…}
+                </code>
+            </p>
+
+            <h3>Vamos a las lamimas para poder realizar los siguientes ejercicios</h3>
+        
+                <p>
+                    1. Crea una <b>&lt;div&gt;</b> con id="circle" y aplica los siguientes Estilos en línea, deberas usar el <mark>atributo "style":</mark> 
+                    <br>
+                    ✅ area 100px x 100px.
+                    <br>
+                    ✅ color de fondo rojo
+                    <br>
+                    ✅ Descubre que pasa si, le agregar borde con radio de 50%
+                    <br>
+                    ✅ Con la profesora, aplica una animacion de movimento a ese <b>&lt;div&gt;</b> a lo largo del eje vertical.
+                    Para lograrlo, al elemento agregale la regla CSS <code>animation:</code> 
+                    asignandole el nombre que quieras, luego la usaras para identificarle su <code>@keyframes.</code> (Define la animación), donde 
+                    manipularas su posición vertical usando la propiedad <code>transform:translateY(num)</code>, Condidera que:
+                    <br>
+                    Un valor positivo (translateY(100px)) lo trasladar hacia abajo.
+                    <br>
+                    Un valor negativo (translateY(-100px)) lo trasladar hacia arriba. 
+                    <br>
+                    El valor 0 (translateY(0)) hace referencia a la posicion inicial del elemento. 
+
+                </p>
+                <!--//TODO <div id="circle" style="height: 100px; width: 100px; background-color: red ; border-radius: 50%;"></div> -->
+                
+
+                <p>
+                    2. crea una <b>&lt;section&gt;</b> con con id="container", que contenga 5 hijos <b>&lt;div&gt;</b> y aplica Estilo Interno con <mark>Etiqueta "style":</mark>, haz lo siguiente:
+                    <br>
+                    ✅ la section id="container" debe tener un ancho del 100% de tu padre.
+                    <br>
+                    ✅ CADA hijo debe tener un ancho diferente, del 10% menos que su hermano anterior.
+                    <br>
+                    ✅ Los hijos PARES tendran un color de fondo que el de los hijos INPARES.
+                    <br>
+                    ✅ Los hijos PARES e INPARES, alternaran de color al efecto <code>:hover</code>.
+                    <br>
+                    ✅ Aplica margen y pading a TODOS hijo.
+                    <br>
+                    ✅ CADA hijo debe tener contenido centrado.
+                    <br>
+                Puedes usar la de Pseudoclases  <code>:nth-child(odd || even || numHijo)</code> 
+                    
+                </p>
+
+                <!--//TODO <section id="container" >
+                    <div>uno</div>
+                    <div>dos</div>
+                    <div>tres</div>
+                    <div>cuatro</div>
+                    <div>cinco</div>
+                </section> -->
+
+        </section>
+
+        
+<!--!! CLASS 4 -->
+        
+        <section id="box-model" style="background-color:rgb(239, 235, 230); font-size: 30px;" >
+            <h2> Box Model</h2>
+            <p>
+                Debes imaginar todos los elementos HTML (etiquetas) visibles contenedores, como una caja regtangular. Comienza con el contenido de la caja que sera el texto o imagenes que renderizaremos, le sigue el pading o espacio que lo separa de su border. La caja puede tener:
+            </p>
+    
+           
+            <h3> CSS Properties: margin, padding y border</h3>
+            <p>
+                <b>Padding:</b> enpuja el contenido de la caja hacia dentro, al aplicarlo, el contenido se aleja del borde de la caja.<br> 
+                <b>Border:</b> delimita el contenido y padding de la caja. <br>
+                <b>Margin:</b> es la separacion de la caja de otras cajas, sus hermanas.
+            </p>
+            
+            <h3>Como aplicar estas propiedades en CSS.</h3>
+            <div style="margin: 20px;">
+                <p>
+                    <b>1. Un solo valor para todos los lados:</b> Cuando se utiliza un solo valor. <br><b>2. Dos valores para los ejes Y y X:</b> Al utilizar dos valores, el primer valor se aplica a los lados superior e inferior (eje Y), mientras que el segundo valor se aplica a los lados izquierdo y derecho (eje X). <br><b>3. Valores específicos por cada lado:</b> especificando valores diferentes para cada lado del elemento utilizando cuatro valores en el siguiente orden: superior, derecho, inferior e izquierdo.<br>
+                    <mark>Siguen el orden de las agujas del reloj ⌚</mark> <br>
+                    
+                    <b>Sintaxis: </b> <br>
+                    <code>
+                        selector { margin || padding: 10px;}  /* todos los lados */ <br>
+                        selector { margin || Padding: 10px 20px;} /* eje Y y X */ <br>
+                        selector { margin || Padding: 10px 20px 30px 40px;} /* superior, derecho, inferior, izquierdo */ <br>
+                    </code>
+                </p>
+                <p>
+                    Las propiedades de <b> margin y padding </b>se aplican de manera similar en términos de valores (uno, dos o cuatro), en tanto que: La propiedad <mark> <b> border</b> requiere especificar tres aspectos (ancho, estilo y color), separalos solo con espacios NO uses signos </mark>  que pueden ser aplicados a todos los lados o individualmente. Esto proporciona una flexibilidad adicional al diseñar la apariencia visual de los elementos en una página web.<br>
+                    <code>
+                        selector {border: <b>(5px || thin || medium || thick) </b>solid red}<br>
+                        selector {border: thin <b>(solid || dashed || double || dotted)</b>  #fff } <br>
+                        selector {border: 10px dotted <b>(blue || #000 || rgb(255, 255, 255) ) </b> } <br>
+                    </code>
+                </p>
+    
+                <p>
+                    Para pintar el borde especifico de un lado del HTML Elemento podrias usar, en vez de <code>border</code>, los siguientes propiedades <b><code>border-top, border-right, border-bottom, border-left</code></b> 
+                </p>
+                
+                <h3>Ejercicio:</h3>
+                <ol>
+                    <li>crea una div con area 200px x 200px, background-color, padding:10px a todos sus lados, margin-y: 20px y margin-x centrado en todo el ancho de padre, para ello puedes usar el valor <b>auto</b>. con contenido: "Hola Mundo"</li>
+                    <li>crea una div con area 100px x 100px, background-color, padding de 10px a todos sus lados, margin de 20px a todos sus lados y el borde de cada lado con ancho, estilo y color diferentes. Con contenido: "soy una caja",</li>
+                    <li>crea una div con area 100px x 100px,  background-color, padding de 70px, hazle margin y border, y el contenido sera un "Lorem"... Oh... que es lo que ves??</li>
+                </ol>
+
+                <div id="ejercicio-uno" style="height:200px; width: 200px; background-color: red; padding:10px; margin: 20px auto;">hola mundo</div>
+                <div id="ejercicio-dos" style="height:100px; width: 100px; background-color: blue; padding:10px; margin: 20px; border-top: thin solid red; border-right: thick dotted green; border-bottom: 10px double hotpink; border-left: 20px dashed purple;">soy una caja</div>
+                <!-- <div id="ejercicio-tres" style="height:100px; width: 100px; background-color: yellow; padding:50px; margin: 20px; border: thin solid red; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim blanditiis earum nesciunt soluta minima, explicabo dolore quaerat autem libero nemo nostrum laudantium adipisci iste officiis, architecto amet? Accusantium, explicabo.</div> -->
+            </div>
+            
+            
+            <h3>Como respetar el tamano intrínseco de la caja y su contenido?</h3>
+            <div>
+
+                <p>
+                    El <b>Padding</b> podria afectar el tamano del final elemento, porque este se le suma al height y width de aplicaste la caja <br> Para evitarlo, y que la caja respete las dimenciones dadas usa <code>box-sizing:border-box</code>, la cual obliga que el border y el padding esten contenidos en las dimenciones dadas. <br>
+                    </p>
+                   
+                    <h4>PROPIEDAD BOX-SIZING</h4>
+                    <p>
+                        Es la propiedad con la que se determina cómo se calculan las dimensiones totales de un elemento (su ancho y alto), incluyendo o no el padding y el borde.<br>
+                        puede tomar dos valores principales: content-box y border-box.<br> 
+                        <b> content-box:</b> valor default, Las propiedades width y height solo incluyen el área de contenido del elemento. El padding y el border se suman al ancho y alto del contenido, lo que puede hacer que el tamaño total del elemento sea mayor que el especificado en width y height.<br>
+                        <b> border-box:</b> Incluye el padding y el border dentro del ancho y alto especificados por width y height. Esto significa que el tamaño total del elemento es exactamente el que se especifica, sin importar el padding o border aplicado.
+                    </p>
+
+                   <p> 
+                       <mark>Pero!!! al obligar a la caja a mantener las dimenciones dadas, </mark> puede ocurrir <b>overflow</b> o desbordameinto del contenido.<br>
+                       Para evitarlo, puedes usar <code>overflow:hidden</code> o mejor aun, en vez de ocultar el contenido desbordado podrias establecer que la caja tome el tamano que realmente requiera sin fijar sus dimenciones, lo que se llama respetar el <mark>Tamano Intrinseco</mark> al establecer <code>with && height: min-content</code>
+                    </p>
+               
+
+                <h3>Ejercicio</h3>
+                <p>
+                    <ol start="4">
+                        <li>crea una div con area 200px x 300px, padding de 100px, hazle margin y border, y el contenido dera un "Lorem", cuyo contenido desbordado se oculte</li>
+                        <li>Crea una div con area intrínseca, donde el alto sea el min-content y el ancho con max-content. con: padding, margin y border, y el contenido dera un "Lorem"... que no se desborde.</li>
+                        <li>Ahora haz una igual a la anterior pero que el ancho se ajuste al ancho de la pantalla y evites el molesto scroll horizontal, usa max-width:100vw; </li>
+                    </ol>
+                </p>
+                <div id="ejercicio-cuatro" style="height:200px; width: 200px; background-color: yellow; padding:100px; margin: 20px; border: thin solid red; overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim blanditiis earum nesciunt soluta minima, explicabo dolore quaerat autem libero nemo nostrum laudantium adipisci iste officiis, architecto amet? Accusantium, explicabo.</div>
+                <div id="ejercicio-cinco" style="height:min-content; width:max-content; background-color: yellow; padding:100px; margin: 20px; border: thin solid red; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim blanditiis earum nesciunt soluta minima, explicabo dolore quaerat autem libero nemo nostrum laudantium adipisci iste officiis, architecto amet? Accusantium, explicabo.</div>
+                <div id="ejercicio-seis" style="height:min-content; max-width:100vw; background-color: yellow; padding:100px; margin: 20px; border: thin solid red; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim blanditiis earum nesciunt soluta minima, explicabo dolore quaerat autem libero nemo nostrum laudantium adipisci iste officiis, architecto amet? Accusantium, explicabo.</div>
+
+                <p>Como pudes observar, el <code>with && height: min-content</code> puede genrar la aparicion del molesto scroll, y debemos ser responsivos... Mas ademante veras que podemos usar las propiedades: <code> max-width, max-height, min-width, min-height</code> asignandole valores relativos como % o medidas del viewport.
+                </p>
+            </div>
+
+            
+        
+            <h3>Volviendo al BOX MODEL</h3>
+            <p>
+                Por, ejemplo, para que una &lt;div&gt; sin contenido sea visible (aunque exista), requiere estilos tales como: alto, ancho y color de fondo. 
+            </p>
+            
+            <p>
+                Los elementos HTML que pueden tener: width, height, padding, border y margin deben tener display de bloque (display:block), que es la propiedad que nos permite manipular al elemento con una caja. Hay otros tipos de display, como el inline, inline-bloch, flex, grid, el inline no permite lo mismo que el block. Entonces si requieres trabajar con el modelo de caja y no estas seguro del display de la etiqueta que estas usando define display:block/flex/grid que lo obligan a comportase como un elemento de bloque.
+            </p>
+
+            <p>
+                Rercuerda, con el modelo de caja, podemos definir las dimenciones del elemento mediante la propiedad box-sizing:border-box para que la caja respete los valores definidos para <code>width y height </code> asignado, pero si el contenido, padding y border de la caja supera esos limites se desbordara (over-flow) el contenido. Entones para evitar ese desbordamiento width y height poden no ser fijos sino intrínseco, tomando las medidas necesarias para que su contenido NO se desborde, lo cual se logra con width/height:min-content, que obliga a la caja a tomar el espacio mínimo necesario para mostrar su contenido e incluyendo su padding, el elemento se reducirá tanto como sea posible sin ocultar o desbordar su contenido, asi el navegador desidira el tanano de foma responsiva.  
+            </p>
+
+            <p>
+                Al elemento tambien podemos establecerles dimenciones maximas y minimas con min-width, max-width, min-height y max-height de la siguiente forma:<br>
+                <b>min-width y min-height:</b> Establece ancho/altura mínima que un elemento puede tener. Previene que la propiedad width/height sea inferior al valor especificado.<br>
+                <b>max-width y max-height:</b>Define ancho/altura máxima que un elemento puede alcanzar. Si el valor de width/height es mayor que el especificado en max-width/max-height, este último prevalecerá.
+            </p>
+            <h4>Aplicando Sombra a la caja</h4>
+            <p>
+                <code>box-shadow: offset-x offset-y blur-radius spread-radius color;</code>
+                <br>
+                <code>box-shadow: 10px 10px 5px 2px #000
+                    <div style="width: 100px; height: 100px; background-color: red; border: thick solid #000; box-shadow: 10px 10px 5px 2px #000;">opn sombra</div>
+            </p>
+            <h3>Ejercicio</h3>
+            <p>
+                <ol start="7">
+                    <li>crea una span con area 900px x 900px, padding de 50px, hazle margin y border, con bg, y el contenido: "Hola". Ahora dime cuales de esas CSS Propiedades si reconoce?, <mark>sera porque es <code>display:inline</code>?, prueba cambiandolo. </mark>  </li>
+                </ol>
+                <span style="width: 900px; height: 900px; padding: 10px; margin: 10px; background-color: red; border:10px solid blue;">hola</span>
+        </section>
+
+        
+
+        
+        
+        <section id="display" style="background-color:rgb(239, 235, 230); font-size: 30px;">
+            <h2> CSS Property Display</h2>
+            <p>Ya entendemos como funciona display inline y block... investiga blockinline</p>
+
+            <div>
+                <h3>Display:flex</h3>
+                <p>Aplicale la regla CSS de flexibilidad al contenedor padre, es importente que conozcas las siguientes propiedades<br>
+                    <b>display: flex;: </b>Hace que el contenedor sea flexible, permitiendo que los elementos hijos se alineen horizontalmente.<br>
+                    <b>justify-content: space-around;:</b> Distribuye los elementos hijos de manera uniforme dentro del contenedor, con espacios iguales entre ellos.<br>
+                    <b>align-items: center;:</b> Centra verticalmente los elementos hijos dentro del contenedor.
+
+                </p>
+                <div style="background-color: #f35454;">
+                <!-- <div style="height: 300px; background-color: #f35454; display: flex; justify-content: space-around; align-items: center"> -->
+                    <div style="background-color: yellow; width: 30%; height:50%; margin: 10px; border: thin solid red;">Div 1</div>
+                    <div style="background-color: blue; width: 30%; height:50%; margin: 10px; border: thin solid red; color: white;">Div 2</div>
+                    <div style="background-color: green; width: 30%; height:50%; margin: 10px; border: thin solid red; color: white;">Div 3</div>
+                  
+                </div>
+
+                <img src="./display.png" width="80%" height="50%" style=" display: block; margin: 10px auto;">
+                <img src="./disply2.png" width="80%" height="50%" style=" display: block; margin: 100px auto;">
+
+
+            </div>
+        </section>
+        
+        
+        <section id="ortro" style="background-color:rgb(255, 255, 255); height:800px; font-size: 30px;" >
+            <h2> otro</h2>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Edily Mora">
+        <meta name="descripction" content="this is a website for learning" >
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <title> Class 2</title>
+    </head>
+    <body>
+        <header style="background-color: antiquewhite;">
+            <span>Website icon</span>
+            <span>Website menu</span>
+        </header>
+
+        <main>
+            <h1>Class 2</h1>
+            
+            <h1>NESTED STRUCTURES</h1>
+            <!--! FIGURE -->
+            <section>
+                <h1>Figure</h1>
+                <figure>
+                    <img src="./descarga.jpg" alt="image 1" width="200px" height="200px">
+                    <figcaption> Figure 1: Image </figcaption>
+                </figure>
+
+                <figure>
+                    <video controls loop autoplay muted width="40%" height="40%" >
+                        <source src="https://videos.pexels.com/video-files/8721932/8721932-uhd_2732_1440_25fps.mp4" type="video/mp4" />
+                        <source src="./video.mp4" type="video/mp4" />
+                        <source src="./video.webm" type="video/webm" />
+                        <source src="./video.Ogg" type="video/Ogg" />
+                        Your browser does not support the video element
+                    </video>
+                    <figcaption> Figure 2: Video </figcaption>
+                </figure>
+
+                <figure>
+                    <iframe  src="https://www.youtube.com/embed/ScMzIvxBSi4"  width="400" height="400" >
+                    </iframe>
+                    <figcaption> Figure 3: Iframe </figcaption>
+                </figure>
+            </section>
+
+            <hr>
+         <!--! TABLE -->
+            <section>
+            <h3>TABLES</h3>
+            <table border="2">
+                <caption>Student's Table</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>David</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Maria</td>
+                        <td rowspan="2">22</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Jose</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="3">All Students</td>
+                </tfoot>
+
+            </table>
+            </section>
+
+
+            <hr>
+         <!--! FORM -->
+            <section>
+                <h3>Contact Form</h3>
+                <form>
+                    <label for="name" style="display: block; color: aqua;">Name:</label>
+                    
+                    <input id="name" name='name' type="text" placeholder="Name" style="display: block">
+                    
+                    <label style="display: block; color: aqua;">Email:
+                        <input id="email" name='email' type="email" placeholder="Name" style="display: block">
+                    </label style="display: block; color: aqua;">
+                    
+                    <label style="display: block; color: aqua;">Mesage:
+                        <textarea id="smg" name='smg'rows="4" placeholder="Message" style="display: block"></textarea>
+                    </label>
+                    
+                    <input type="date">
+                    <input type="color">
+                    
+                    
+                    <button type="submit" style="background-color: blue; color: white; border-radius: 5px; padding: 10px 20px; border: none;">
+                        Send
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <hr>
+        <!--! LISTS -->
+<section>
+    <h3>Order Lists</h3>
+    <ol start="2" type="I">
+        <li>Item 1</li>
+        <li>Item 3</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h3>Unorder Lists</h3>
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>Definition Lists</h3>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+    
+</section>
+
+
+
+
+        <footer>
+            <p>&copy; 2023 Mi pestana</p>
+            <p>direccion</p>
+            <p>social media</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    color: rgb(48, 48, 144);
+}
+
+#circle {
+    margin-top: 100px;
+    animation: rebote 3s infinite; /* Animación para mover hacia abajo */
+}
+
+@keyframes rebote {
+    0%, 100% {
+        transform: translateY(0); /* Posición en Eje "Y" inicial y final*/
+    }
+    50% {
+        transform: translateY(-100px); /* Posición en Eje "Y" top de 100 píxeles */
+    }
+}

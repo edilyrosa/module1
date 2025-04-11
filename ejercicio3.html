@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ejercicio3.css">
+    <title>Clase tres</title>
+    <style>
+        #la-cabecera *{
+            display: inline;
+            margin-left: 20px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            font-weight: 700;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+        #circle{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            animation: rebote 3s infinite;
+            margin-top: 300px;
+        }
+
+        @keyframes rebote {
+           0%, 100% {
+                transform:translateY(0)
+            }
+           50% {
+                transform:translateY(-300px)
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="la-cabecera">
+        <img src="./ingnio.jpg" alt="img de la empresa" width="80px" height="80px">
+        <h1>clase 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#ancors">Ancors Vs. Links</a></li>
+                <li><a href="#atributes">HTML Atributos</a></li>
+                <li><a href="#style">Estilos</a></li>
+                <li><a href="#box">Modelo de Caja</a></li>
+                
+                <li><a href="#display">Display</a></li>
+                <li><a href="https://www.google.com/" target="_blank" >google 🔎</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ancors" style="background-color: rgb(211, 208, 204); height: 800px;">
+            <h2>Ancors Vs. Links</h2>
+        </section>
+        <section id="atributes" style="height: 800px;">
+            <h2>HTML Atributos</h2>
+        </section>
+        <section id="style" style="background-color: rgb(255, 255, 255);height: 800px;">
+            <h2>Aplicando CSS</h2>
+        </section>
+        <section id="display"  style="height: 800px;" >
+            <h2>Display</h2>
+
+            <!-- <div id="circle"></div> -->
+        </section>
+
+
+ <!--! CLASE 4 -->
+    <section id="box" style="background-color: rgb(211, 208, 204); font-size:30px;">
+        <h2>Modelo de caja</h2>
+
+        <div style="margin:50px; border: 10px solid red;">soy contenido 1</div>
+        <div style="margin-top:100px; border: 10px solid red;">soy contenido 2 </div>
+        <div style="margin:20px 100px 50px 1000px; border: 10px solid red;">soy contenido 3 </div>
+        <div>hermano inferior</div>
+
+        <h3> bordes</h3>
+        <div style="border: 5px solid blue; margin-bottom: 50px;">los 4 bordes</div>
+        <div style="border: 5px dashed #fff;">los 4 bordes</div>
+
+        <div style="height:200px ; border-left: 10px dotted purple; margin-top: 20px;">borde left</div>
+        <div style="height:200px ; border: thick double yellow; margin: 20px;">borde bottom</div>
+    
+    <p>Ejercicio 1
+        <br>
+        crea una div con area 200px x 200px, background-color, padding:10px a todos sus lados, margin-y: 20px y margin-x centrado en todo el ancho de padre, para ello puedes usar el valor auto. con contenido: "Hola Mundo"
+    </p>
+
+    <div id="ejercicio-uno" style="height:200px; width:200px; background-color:red; padding: 10px; margin:20px auto;">Hola mundo</div>
+    
+    <p>
+        crea una div con area 100px x 100px, background-color, padding de 10px a todos sus lados, margin de 20px a todos sus lados y el borde de cada lado con ancho, estilo y color diferentes. Con contenido: "soy una caja",
+    </p>
+    
+    <div id="ejercicio-dos" style="height:100px; width:100px; background-color:green; padding: 10px; margin:20px; border-top: 10px solid yellow; border-right: 20px dashed hotpink; border-bottom: 30px dotted cyan; border-left: 40px double black;  ">soy una caja</div>
+    
+    <p>
+        crea una div con area 100px x 100px, background-color, padding de 70px, hazle margin y border, y el contenido sera un "Lorem"... Oh... que es lo que ves??
+    </p>
+    <div id="ejercicio-tres" style="height:100px; width:100px; background-color:hotpink; padding: 70px; margin:20px; border: 10px solid yellow; overflow: hidden;box-sizing:border-box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores commodi, natus labore ex doloribus quia tempore assumenda blanditiis tenetur, quae iusto fuga provident eaque! Consequuntur dicta aut quia dolorem.</div>
+    
+    <h3>  Tamano Intrinseco  con min-content </h3>
+    <div id="otro-eje" style="height:min-content; width:min-content; background-color:hotpink; padding: 70px; margin:20px; border: 10px solid yellow; overflow: hidden;box-sizing:border-box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores commodi, natus labore ex doloribus quia tempore assumenda blanditiis tenetur, quae iusto fuga provident eaque! Consequuntur dicta aut quia dolorem.</div>
+    <div id="otro-eje" style="height:min-content; width:max-content; background-color:hotpink; padding: 70px; margin:20px; border: 10px solid yellow; overflow: hidden;box-sizing:border-box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores commodi, natus labore ex doloribus quia tempore assumenda blanditiis tenetur, quae iusto fuga provident eaque! Consequuntur dicta aut quia dolorem.</div>
+    <h3>  Tamano responsivo  con max-width </h3>
+    <div id="otro-eje" style="height:min-content; max-width:100vw; background-color:hotpink; padding: 70px; margin:20px; border: 10px solid yellow; overflow: hidden;box-sizing:border-box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores commodi, natus labore ex doloribus quia tempore assumenda blanditiis tenetur, quae iusto fuga provident eaque! Consequuntur dicta aut quia dolorem.</div>
+    
+<div id="exito" style="height: 100px; width: 200px; background-color: aqua; box-shadow:10px 10px 50px 20px red;"></div>
+
+</section>
+
+      
+
+        
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div style="border: 10px solid red;">hola</div>
+        
+        <div style="padding:20px; margin:20px; border:10px solid green;">hola dos</div>
+        
+        <div style="padding:50px 100px 500px 10px; margin:20px; border: 10px solid yellow;">hola dos</div>
+        
+        <div style="padding:50px; margin:20px; border: 10px dotted red;">hola dos</div>
+        <div style="padding:50px; margin:20px; border-left: 10px dotted red;">hola dos</div>
+       
+       <p> Ejercios </p>
+        <div style=" width:200px; height:200px; padding:10px; margin:20px auto; border: 2px double red;">hola mundo</div>
+        
+        <div style=" width:100px; height:100px; padding:5px; margin:20px; border: 2px double red;">hola mundo</div>
+        <div style=" width:100px; height:100px; padding:90px; margin:20px; border: 2px double red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam soluta harum labore repudiandae quibusdam excepturi dolorem, magni atque, velit blanditiis error itaque numquam et dolorum ad. Quam, neque blanditiis.</div>
+ -->
+
+
+
+
+
+
+
+
+    </main>
+    <footer style="background-color: antiquewhite;">
+        <p>redes sociales</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Proporciona una descripción breve del contenido de la página, visible en los resultados de búsqueda.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- !! Indica las palabras clave relevantes para el contenido de la página, aunque su uso ha disminuido en SEO.
+     Los motores de búsqueda ahora priorizan:
+     ✅ Calidad del contenido, 
+     ✅Experiencia del usuario, 
+     ✅Estructura técnica del sitio y 
+     ✅Enlaces entrantes (backlinks) sobre prácticas obsoletas como las meta keywords
+      -->
+    <title>Class 2</title>
+</head>
+<body>
+    <main>
+        <h1>CLASS 2</h1>
+        <section>
+            <h2>NESTED STRUCTURES</h2>
+
+            <h3>Figure + Figcaption</h3>
+            <figure>
+                <img alt="image 1" src="./ingnio.jpg" width="200px" width="200px">
+                <figcaption>Figure 1: Image</figcaption>
+            </figure>
+            <hr>
+
+
+            <figure>
+                <video controls autoplay loop muted width="200" height="200">
+                    <source src="https://videos.pexels.com/video-files/8721932/8721932-uhd_2732_1440_25fps.mp4" type="video/mp4" />
+                    <source src="./video.mp4" type="video/mp4" />
+                    <!-- 🚫 <source src="C:\Users\edily\Desktop\video.mp4" type="video/mp4" /> -->
+                    <source src="..." type="video/webm" />
+                    Your browser does not support the video element
+                </video>
+                <figcaption>Figure 2: video</figcaption>
+            </figure> 
+            <hr>
+
+
+            <figure>    
+              <iframe
+                width="400"
+                height="400"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                ></iframe>
+                <figcaption>Figure 3: Iframe de video</figcaption>
+            </figure>
+            <hr>
+
+            
+            
+            <h3>tables</h3>
+            <table border="2">
+                <caption>Students' List</caption>
+                <thead>
+                    <tr>
+                        <th>Id</th> <th>Name</th> <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <!-- <td>01</td> <td>Mara</td> <td rowspan="2" >20</td>  -->
+                        <td>01</td> <td>Maria</td> <td>20</td> 
+                    </tr>
+                    <tr> 
+                        <!-- <td>02</td> <td>Jose</td>   -->
+                        <td>02</td> <td>Jose</td> <td>20</td> 
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr> <td colspan="3"> All Students</td> </tr>
+                </tfoot>
+            </table>
+            <hr>
+
+
+            <h3>Forms</h3>
+            <form action="submit.php" method="POST">
+                <h2>Contacto</h2>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email" >Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message" style="color: rgb(11, 132, 238); display: block;">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit" disabled>Send</button>
+            </form>
+            <hr>
+            
+            
+            <h3>Lists</h3>
+
+            <h4>Unordered list</h4>
+            <!-- <ul type="square"> -->
+            <ul type="circle">
+                <li>Pink</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+            </ul>
+            <hr>
+
+
+
+            <h4>Ordered List</h4>
+            <!-- <ol type="A" start="2"> -->
+            <!-- <ol type="I" start="2"> -->
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ol>
+            <hr>
+            
+            
+            
+            <h4>Definition List</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+            <hr>
+
+
+        </section>
+
+       
+       
+       
+       
+        <section>
+            <h2>HTML ATRIBUTES AND CSS PROPERTIES</h2>
+            <p>Atributos comunes: id=“” , class=“” , style=“”, title=“” Proporciona información adicional al pasar el cursor sobre el , hidden Oculta un elemento, Booleano. src=“https//” , width=“100” y height=“40” 
+            </p>
+            <p>Atributos comunes multimedia o visuales: disabled, readonly, required, checked, loop,   </p>
+            <p>Propiedades CSS comunes: color, background-color, font-size, font-family, text-align, margin, padding, border, width, height, display, position, float, clear, opacity, text-decoration, text-transform, line-height, letter-spacing, word-spacing, text-shadow, box-shadow, border-radius, overflow, cursor, transition, transform, animation, flex, grid, media queries, responsive design, etc.</p>
+            </p>
+       
+
+        </section>
+    </main>
+
+
+
+    <footer style="background-color: rgb(182, 174, 190);">
+        <p>Copyright 2025</p>
+        <p>Soccial Medias</p>
+    </footer>
+
+</body>
+</html>
