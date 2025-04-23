@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hola">hola</button>
+    
+    <script>
+        const edily = {
+            names:'edi',
+            // saluda: function(){
+            //     console.log(`hola ${this.name}`)
+            // }
+            saluda: () => {
+                console.log('hola', this)
+            }
+        }
+
+
+        edily.saluda()
+
+        const button = document.getElementById('hola')
+        button.addEventListener("click", () => {
+            console.log(event); // Logs: the surrounding lexical scope (e.g., window or undefined)
+          });
+        // const button = document.getElementById('hola')
+        // button.addEventListener("click", () => {
+        //     console.log(this); // Logs: the surrounding lexical scope (e.g., window or undefined)
+        //   });
+        // const button = document.getElementById('hola')
+        // button.addEventListener("click", function aa(){
+        //     console.log(this); // Logs: the surrounding lexical scope (e.g., window or undefined)
+        //   });
+    </script>
+</body>
+</html>

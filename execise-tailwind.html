@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 3.3. Ejercicio:
+Con tailwind, desarrolle un contenedor flexible que contenga una matriz
+de 2x3 items dispuesto en row-filas. 
+Los cuales, deben estar centrados en su eje principal 
+(justify-center) y al inicio del eje secundario(items-start), 
+separalas un poco (gap). Recuerda prevenir el desbordamiento 
+de la fila (flex-wrap).
+(rows-horizontales) x (columns-verticales) 
+
+| . . . |
+| . . . |
+|       |
+|       | -->
+
+<section class="h-screen bg-red-300 flex flex-row gap-[50px] flex-wrap justify-center items-start ">
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 1</div>
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 2</div>
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 3</div>
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 4</div>
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 5</div>
+    <div class="bg-white h-[100px] w-1/4 p-2 m-2">ITEM 6</div>
+</section>
+
+    
+</body>
+</html>
